@@ -27,7 +27,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Z9-A5-5XD">
-                                            <rect key="frame" x="38" y="11" width="215" height="21"/>
+                                            <rect key="frame" x="28" y="6.5" width="225" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -39,10 +39,20 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1d-S5-59l">
+                                            <rect key="frame" x="28" y="28" width="225" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="6Z9-A5-5XD" firstAttribute="centerY" secondItem="pPR-ON-EOX" secondAttribute="centerY" id="LWQ-wN-SFn"/>
-                                        <constraint firstItem="6Z9-A5-5XD" firstAttribute="leading" secondItem="pPR-ON-EOX" secondAttribute="leadingMargin" constant="30" id="a9g-2B-Fwr"/>
+                                        <constraint firstAttribute="trailing" secondItem="x1d-S5-59l" secondAttribute="trailing" id="CSs-ml-umm"/>
+                                        <constraint firstAttribute="bottom" secondItem="x1d-S5-59l" secondAttribute="bottom" id="J4U-io-FFW"/>
+                                        <constraint firstItem="x1d-S5-59l" firstAttribute="leading" secondItem="pPR-ON-EOX" secondAttribute="leadingMargin" constant="20" id="LF5-cM-30a"/>
+                                        <constraint firstItem="6Z9-A5-5XD" firstAttribute="centerY" secondItem="pPR-ON-EOX" secondAttribute="centerY" constant="-5" id="LWQ-wN-SFn"/>
+                                        <constraint firstItem="x1d-S5-59l" firstAttribute="top" secondItem="6Z9-A5-5XD" secondAttribute="bottom" constant="1" id="W03-Bg-nHv"/>
+                                        <constraint firstItem="6Z9-A5-5XD" firstAttribute="leading" secondItem="pPR-ON-EOX" secondAttribute="leadingMargin" constant="20" id="a9g-2B-Fwr"/>
                                         <constraint firstAttribute="trailing" secondItem="6Z9-A5-5XD" secondAttribute="trailing" id="ycb-qk-QER"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -66,7 +76,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sZs-VP-imx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="81"/>
+            <point key="canvasLocation" x="1886.25" y="80.281690140845072"/>
         </scene>
         <!--Add Checklist-->
         <scene sceneID="Tpq-0d-6sX">

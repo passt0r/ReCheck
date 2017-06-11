@@ -47,7 +47,12 @@ class CheckListViewController: UITableViewController, ItemDetailViewControllerDe
     
     func configureLabel(for cell: UITableViewCell, with item: CheckListItem) {
         let label = cell.viewWithTag(1000) as! UILabel
+        let dueDateLabel = cell.viewWithTag(1002) as! UILabel
         label.text = item.text
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        dueDateLabel.text = "Due to: \(formatter.string(from: item.dueDate))"
     }
 
     // MARK: - Table view data source
