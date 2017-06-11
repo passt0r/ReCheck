@@ -1,0 +1,6 @@
+framework module Pods_ReCheck {
+  umbrella header "Pods-ReCheck-umbrella.h"
+
+  export *
+  module * { export * }
+}
